@@ -1,5 +1,3 @@
-
-
 function JavaApp() {
   return <div>JavaApp</div>;
 }

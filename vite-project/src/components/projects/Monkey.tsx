@@ -1,5 +1,3 @@
-
-
 function Monkey() {
   return <div>Monkey</div>;
 }

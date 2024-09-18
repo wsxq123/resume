@@ -1,5 +1,5 @@
 import PicOnlyTemp from '@components/projects/PicOnlyTemp';
-import GUStylePng from '@assets/projects/guStyle.jpg';
+import GUStylePng from '@assets/projects/guStyle.png';
 
 function GUStyle() {
   const picList = [GUStylePng];

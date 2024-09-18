@@ -69,7 +69,7 @@ function Briefcase({ open, onClose }: DialogPropType) {
 
   return (
     <Dialog onClose={onClose} open={open} maxWidth='lg'>
-      <Box height='500px' padding='40px' overflow='scroll' >
+      <Box height='500px' padding='40px' overflow='scroll'>
         <Typography variant='h5' gutterBottom align='center'>
           Job History
         </Typography>
