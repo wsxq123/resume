@@ -18,7 +18,32 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    
+
+    /* Path setting */
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": [
+          "./src/*"
+        ],
+      "@routes/*": [
+          "./src/routes/*"
+        ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@types/*": [
+        "./src/types/*"
+      ],
+    },
+    "allowJs": true,
   },
-  "include": ["src"]
+  "include": ["src","./src/*.ts", "./src/*.tsx", "./src/**/*.d.ts", "./test/**/*.test.ts", "./test/**/*.test.tsx"]
 }

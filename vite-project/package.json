@@ -10,12 +10,21 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
-    "format": "prettier --write ./src"
+    "format": "prettier --write ./src",
+    "devAndClean": "npm cache clean --force && vite"
   },
   "dependencies": {
+    "@emotion/react": "11.13.3",
+    "@emotion/styled": "11.13.0",
+    "@mui/icons-material": "6.0.1",
+    "@mui/lab": "5.0.0-alpha.173",
+    "@mui/material": "6.0.1",
+    "@mui/x-charts": "7.13.0",
     "gh-pages": "^6.1.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0",
+    "vite-tsconfig-paths": "^5.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
