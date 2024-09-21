@@ -14,7 +14,7 @@ function Weibao() {
     weibaoPng05,
   ];
 
-  return <PicOnlyTemp picList={picList} darkBg={false} />;
+  return <PicOnlyTemp picList={picList} />;
 }
 
 export default Weibao;

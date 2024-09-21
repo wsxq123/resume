@@ -3,13 +3,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { useState } from 'react';
 
-function PicOnlyTemp({
-  picList,
-  darkBg,
-}: {
-  picList: string[];
-  darkBg: boolean;
-}) {
+function PicOnlyTemp({ picList }: { picList: string[] }) {
   const [currentPic, setCurrentPic] = useState(0);
 
   function handleBtnClicked(calc: number) {
@@ -26,34 +20,38 @@ function PicOnlyTemp({
   }
 
   return (
-    <Box>
-      {picList.length > 1 && (
-        <>
+    <Box display='flex' justifyContent='center'>
+      <Box width='10%' display='flex' justifyContent='center'>
+        {picList.length > 1 && (
           <Box position='fixed' top={window.innerHeight / 2}>
             <IconButton
               aria-label='btnIcon'
-              color={darkBg ? 'inherit' : 'default'}
+              color='inherit'
               onClick={() => handleBtnClicked(-1)}
             >
               <ArrowBackIosIcon fontSize='large' />
             </IconButton>
           </Box>
-          <Box position='fixed' top={window.innerHeight / 2} right='30px'>
+        )}
+      </Box>
+      <img
+        src={picList[currentPic]}
+        alt={picList[currentPic]}
+        style={{ objectFit: 'contain', width: '80%' }}
+      />
+      <Box width='10%' display='flex' justifyContent='center'>
+        {picList.length > 1 && (
+          <Box position='fixed' top={window.innerHeight / 2}>
             <IconButton
               aria-label='btnIcon'
-              color={darkBg ? 'inherit' : 'default'}
-              onClick={() => handleBtnClicked(1)}
+              color='inherit'
+              onClick={() => handleBtnClicked(-1)}
             >
               <ArrowForwardIosIcon fontSize='large' />
             </IconButton>
           </Box>
-        </>
-      )}
-      <img
-        src={picList[currentPic]}
-        alt={picList[currentPic]}
-        style={{ objectFit: 'contain', width: '100%' }}
-      />
+        )}
+      </Box>
     </Box>
   );
 }

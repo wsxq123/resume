@@ -5,7 +5,7 @@ import UTalkPng02 from '@assets/projects/uTalk-2.png';
 function Guanggu() {
   const picList = [UTalkPng01, UTalkPng02];
 
-  return <PicOnlyTemp picList={picList} darkBg={false} />;
+  return <PicOnlyTemp picList={picList} />;
 }
 
 export default Guanggu;
